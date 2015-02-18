@@ -1,0 +1,7 @@
+{
+  "name": "unnamed",
+  "main": "source/index.html",
+  "dependencies": {
+    "gulp": "^3.8.11"
+  }
+}

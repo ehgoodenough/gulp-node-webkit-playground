@@ -1,0 +1,20 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="content-type" content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div id="debug">...</div>
+        <script>
+            var gulpfile = require("./gulpfile")
+            process.on("uncaughtException", function(exception) {
+                console.log(exception)
+            })
+        </script>
+        <script src="index.js" type="text/javascript"></script>
+        <link href="index.css" type="text/css" rel="stylesheet"/>
+    </body>
+</html>
