@@ -1,1 +1,2 @@
-document.getElementById("debug").innerHTML = "Hello World!?"
+var message = require("./message")
+document.getElementById("debug").innerHTML = message
