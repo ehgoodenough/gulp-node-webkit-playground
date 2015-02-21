@@ -7,11 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div id="debug">...</div>
+        <div id="game">...</div>
         <script>
             var gulp = require("gulp")
             var gulpfile = require("../gulpfile")
-            gulp.watch("../source/**/*", ["reload"])
+            gulp.watch("../build/**/*", ["reload"])
         </script>
         <script src="index.js" type="text/javascript"></script>
         <link href="index.css" type="text/css" rel="stylesheet"/>

@@ -14,9 +14,16 @@ gulp.task("default", ["build"])
 gulp.task("build", function() {
     del(["./build"], function() {
         gulp.start([
-            "build:scripts"
+            "build:markup",
+            "build:scripts",
+            "build:styles"
         ])
     })
+})
+
+gulp.task("build:markup", function() {
+    gulp.src("./source/index.html")
+        .pipe(gulp.dest("./build"))
 })
 
 gulp.task("build:scripts", function() {
@@ -25,8 +32,9 @@ gulp.task("build:scripts", function() {
         .pipe(gulp.dest("./build"))
 })
 
-gulp.task("watch", function() {
-    gulp.watch("./source/**/*.js", ["build:scripts"])
+gulp.task("build:styles", function() {
+    gulp.src("./source/index.css")
+        .pipe(gulp.dest("./build"))
 })
 
 gulp.task("reload", function() {
