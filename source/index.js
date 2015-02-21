@@ -1,2 +1,1 @@
-var message = require("./message")
-document.getElementById("game").innerHTML = message
+document.getElementById("game").innerHTML = "Hello!"
